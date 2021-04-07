@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { DemanderAideComponent } from './demander-aide.component';
+import { DemanderAidePage } from './demander-aide.page';
 
-describe('DemanderAideComponent', () => {
-  let component: DemanderAideComponent;
-  let fixture: ComponentFixture<DemanderAideComponent>;
+describe('DemanderAidePage', () => {
+  let component: DemanderAidePage;
+  let fixture: ComponentFixture<DemanderAidePage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ DemanderAideComponent ],
+      declarations: [ DemanderAidePage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(DemanderAideComponent);
+    fixture = TestBed.createComponent(DemanderAidePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

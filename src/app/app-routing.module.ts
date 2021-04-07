@@ -10,7 +10,12 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'demander-aide',
+    loadChildren: () => import('./demander-aide/demander-aide.module').then( m => m.DemanderAidePageModule)
   },
+
+
 ];
 
 @NgModule({
