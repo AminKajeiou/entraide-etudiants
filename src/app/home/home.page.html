@@ -10,6 +10,7 @@
     <ion-title style="margin: -30px 0px 0px 30px;">
       <strong>Accueil</strong>
     </ion-title>
+
     <div style="margin: -23px 0px 0px 190px;">
       <svg width="27" height="20" viewBox="0 0 27 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -29,9 +30,9 @@
         <circle cx="6" cy="8" r="6" fill="#F02849" />
         <path d="M6.91113 11H5.5V5.56055L3.81543 6.08301V4.93555L6.75977 3.88086H6.91113V11Z" fill="white" />
       </svg>
-
-
     </div>
+
+
 
   </ion-toolbar>
 </ion-header>
@@ -40,8 +41,32 @@
 
 <ion-content [fullscreen]="true">
   <div id="container">
-    <ion-button [routerLink]="['/demander-aide']" color="firstButton">Demander de l'aide</ion-button>
-    <ion-item-divider></ion-item-divider>
+
+
+    <ion-button color="firstButton">Demander de l'aide</ion-button>
+    <div class="a">
+      
+        <svg width="160" height="140" xmlns="http://www.w3.org/2000/svg" version="1.1" >
+        
+          <line x1="10" x2="70" y1="30" y2="30"
+                stroke-linecap="square" stroke="black" stroke-width="2"  />
+  
+        </svg>
+        <p >OU</p>
+        <svg width="160" height="140" xmlns="http://www.w3.org/2000/svg" version="1.1" >
+        
+          <line x1="10" x2="70" y1="30" y2="30"
+                stroke-linecap="square" stroke="black" stroke-width="2"  />
+  
+        </svg>
+    </div>
+
+
+    <ion-button color="secondButton">Proposer de l'aide</ion-button>
+
+
+
+
   </div>
 
 
