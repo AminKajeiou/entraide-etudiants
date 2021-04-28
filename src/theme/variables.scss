@@ -81,8 +81,17 @@
     --ion-color-firstButton-rgb: 0,102,0;
     --ion-color-firstButton-contrast: #639BFC;
     --ion-color-firstButton-contrast-rgb: 255,255,255;
-    --ion-color-firstButton-shade: black;
-    --ion-color-firstButton-tint: black;
+    --ion-color-firstButton-shade: #6da5ff;
+    --ion-color-firstButton-tint: #dee3ff;
+
+    /** secondButton **/
+
+    --ion-color-secondButton: #DDDFF0;
+    --ion-color-secondButton-rgb: 0,102,0;
+    --ion-color-secondButton-contrast: #508efa;
+    --ion-color-secondButton-contrast-rgb: 255,255,255;
+    --ion-color-secondButton-shade: #6da5ff;
+    --ion-color-secondButton-tint: #d1d4ed;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -251,4 +260,12 @@
   --ion-color-contrast-rgb: var(--ion-color-firstButton-contrast-rgb);
   --ion-color-shade: var(--ion-color-firstButton-shade);
   --ion-color-tint: var(--ion-color-firstButton-tint);
+}
+.ion-color-secondButton {
+  --ion-color-base: var(--ion-color-secondButton);
+  --ion-color-base-rgb: var(--ion-color-secondButton-rgb);
+  --ion-color-contrast: var(--ion-color-secondButton-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-secondButton-contrast-rgb);
+  --ion-color-shade: var(--ion-color-secondButton-shade);
+  --ion-color-tint: var(--ion-color-secondButton-tint);
 }
