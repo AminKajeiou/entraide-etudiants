@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Notifications
+    </ion-title>
+    <ion-buttons slot="end">
+      <img width="35" height="30" src="assets/icon/message.png" (click)="redirectMessagerie()">
+      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirect()">
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <br><br>
+  <ion-list>
+    <ion-item>
+      <ion-card>
+        <ion-card-content>
+          Wade a commenté votre post
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-card-content>
+          Jane a commenté votre post
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-card-content>
+          Alice aime votre réponse
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-card-content>
+          Brooklyn a commenté votre post
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-card-content>
+          Brooklyn aime votre réponse
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <ion-card-content>
+          Alice aime votre réponse
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+
+
+<ion-footer>
+  <div *ngIf="btnCommentClicked">
+    <ion-toolbar>
+      <ion-title>Laisser un commentaire</ion-title>
+      <ion-item>
+        <ion-textarea rows="5" cols="10" placeholder="..."></ion-textarea>
+      </ion-item>
+      <ion-grid>
+        <ion-row class="ion-align-items-center">
+          <ion-col size="12" class="ion-text-center">
+            <ion-button color="firstButton">
+              Publier
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </div>
+  <div *ngIf="!btnCommentClicked">
+
+  </div>
+</ion-footer>

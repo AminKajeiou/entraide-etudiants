@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inscription</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div id="container">
+    <form>
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Créer un nouveau compte</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input name="name" type="text" placeholder="Nom"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="name" type="text" placeholder="Prénom"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="email" type="email" placeholder="email"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="mot de passe"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="confirm" type="password" placeholder="retapez mot de passe">
+                </ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button [routerLink]="['/home']" class="btn-register">Confirmer</ion-button>
+              <br><br>
+              <ion-label [routerLink]="['/login']" color="primary">Vous avez déjà un compte?</ion-label>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+</ion-content>

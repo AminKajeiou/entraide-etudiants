@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Vos posts
+    </ion-title>
+    <ion-buttons slot="end">
+      <img width="35" height="30" src="assets/icon/message.png" (click)="redirectMessagerie()">
+      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirect()">
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <br><br>
+    <ion-list>
+      <ion-item>
+        <ion-card [routerLink]="['/reponse']">
+          <ion-card-header>
+            <ion-card-title>4 Mai 2021</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the
+            Wisconsin
+            Territory in 1836.
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+      <ion-item>
+        <ion-card [routerLink]="['/reponse']">
+          <ion-card-header>
+            <ion-card-title>4 Mai 2021</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the
+            Wisconsin
+            Territory in 1836.
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+      <ion-item>
+        <ion-card [routerLink]="['/reponse']">
+          <ion-card-header>
+            <ion-card-title>4 Mai 2021</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the
+            Wisconsin
+            Territory in 1836.
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

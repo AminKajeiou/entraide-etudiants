@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Publier nouveau <br> post
+    </ion-title>
+    <ion-buttons slot="end">
+      <img width="35" height="30" src="assets/icon/message.png" (click)="redirectMessagerie()">
+      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirect()">
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <br><br>
+    <ion-list>
+      <ion-item>
+        <ion-label><b>Catégorie</b></ion-label>
+        <ion-select value="Catégorie">
+          <ion-select-option value="Événements">Événements stage</ion-select-option>
+          <ion-select-option value="Conseils">Conseils recherche de job étudiant</ion-select-option>
+          <ion-select-option value="Anciens">Anciens examens</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <br>
+      <ion-radio-group allow-empty-selection>
+        <ion-item>
+          <ion-label>option </ion-label>
+          <ion-radio slot="start"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>option</ion-label>
+          <ion-radio slot="start"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>option</ion-label>
+          <ion-radio slot="start"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+
+
+      <ion-item>
+        <ion-label><b>Message</b></ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-textarea rows="6" cols="20" placeholder="Tapez votre message ..."></ion-textarea>
+      </ion-item>
+      <br>
+      <ion-button class="btn-demander-proposer" [routerLink]="['/user-posts']" color="firstButton">
+        Poster
+      </ion-button>
+    </ion-list>
+  </div>
+</ion-content>

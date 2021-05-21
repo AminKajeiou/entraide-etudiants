@@ -1,0 +1,116 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Messagerie
+    </ion-title>
+    <ion-buttons slot="end">
+      <img width="35" height="30" src="assets/icon/message.png" (click)="redirectMessagerie()">
+      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirec()">
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <br><br>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button class="btn-demander-proposer" color="firstButton">
+            En privé
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button class="btn-demander-proposer" color="firstButton">
+            En groupe
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-list>
+      <ion-list-header>
+        <b>Conversation récente</b>
+      </ion-list-header>
+
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="assets/icon/u1.png">
+            </ion-avatar>
+            <ion-label>
+              <h2>Wade Warren</h2>
+              <h3>ENSIM</h3>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="assets/icon/u2.png">
+            </ion-avatar>
+            <ion-label>
+              <h2>Brooklyn Simmons</h2>
+              <h3>ENSIM</h3>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="assets/icon/u3.png">
+            </ion-avatar>
+            <ion-label>
+              <h2>Jenny Wilson</h2>
+              <h3>IUT</h3>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="assets/icon/u4.png">
+            </ion-avatar>
+            <ion-label>
+              <h2>Theresa Webb</h2>
+              <h3>IUT</h3>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        <b>En ligne</b>
+      </ion-list-header>
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="assets/icon/u3.png">
+            </ion-avatar>
+            <ion-label>
+              <h2>Jenny Wilson</h2>
+              <h3>IUT</h3>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
+</ion-content>

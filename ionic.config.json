@@ -1,5 +1,7 @@
 {
   "name": "entraide-etudiants",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

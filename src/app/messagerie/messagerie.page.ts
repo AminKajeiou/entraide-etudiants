@@ -1,0 +1,28 @@
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+
+@Component({
+  selector: 'app-messagerie',
+  templateUrl: './messagerie.page.html',
+  styleUrls: ['./messagerie.page.scss'],
+})
+export class MessageriePage implements OnInit {
+
+  constructor(public route: ActivatedRoute, public router: Router) { }
+
+  redirect() {
+
+    this.router.navigate(['/notification/']);
+
+  }
+
+  redirectMessagerie() {
+
+    this.router.navigate(['/messagerie/']);
+
+  }
+
+  ngOnInit() {
+  }
+
+}

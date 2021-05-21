@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,18 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public route: ActivatedRoute, public router: Router) { }
+
+  redirect() {
+
+    this.router.navigate(['/notification/']);
+
+  }
+
+  redirectMessagerie() {
+
+    this.router.navigate(['/messagerie/']);
+
+  }
 
 }
