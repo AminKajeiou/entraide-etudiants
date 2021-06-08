@@ -46,6 +46,22 @@ const routes: Routes = [
     path: 'all-posts',
     loadChildren: () => import('./all-posts/all-posts.module').then( m => m.AllPostsPageModule)
   },
+  {
+    path: 'proposer-aide-posts',
+    loadChildren: () => import('./proposer-aide-posts/proposer-aide-posts.module').then( m => m.ProposerAidePostsPageModule)
+  },
+  {
+    path: 'proposer-aide',
+    loadChildren: () => import('./proposer-aide/proposer-aide.module').then( m => m.ProposerAidePageModule)
+  },
+  {
+    path: 'reponse-post',
+    loadChildren: () => import('./reponse-post/reponse-post.module').then( m => m.ReponsePostPageModule)
+  },
+  {
+    path: 'private-message',
+    loadChildren: () => import('./private-message/private-message.module').then( m => m.PrivateMessagePageModule)
+  },
 
 
 

@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PopoverController } from '@ionic/angular';
-
 
 @Component({
-  selector: 'app-reponse',
-  templateUrl: './reponse.page.html',
-  styleUrls: ['./reponse.page.scss'],
+  selector: 'app-reponse-post',
+  templateUrl: './reponse-post.page.html',
+  styleUrls: ['./reponse-post.page.scss'],
 })
-export class ReponsePage implements OnInit {
+export class ReponsePostPage implements OnInit {
+
 
   isLike: boolean = false;
   isLike2: boolean = false;
   btnCommentClicked: boolean = false;
+  divAnswerContent: boolean = false;
+  btnShowAnswerClicked: boolean = false;
+
   imgSrc = "assets/icon/like.png";
-  constructor(public popoverController: PopoverController, public route: ActivatedRoute, public router: Router) { }
+  answerContent: string;
+  constructor(public route: ActivatedRoute, public router: Router) { }
 
 
   redirect() {
@@ -50,10 +53,25 @@ export class ReponsePage implements OnInit {
       this.imgSrc = "assets/icon/like.png";
     }
   }
-  showModal() {
+  showCommentModal() {
     this.btnCommentClicked = !this.btnCommentClicked;
+  }
+
+  showAnswer() {
+    this.btnCommentClicked = false;
+    this.btnShowAnswerClicked = false;
+    this.divAnswerContent = true;
+    console.log(this.answerContent);
+  }
+
+  showComment() {
+    this.btnShowAnswerClicked = false;
+    this.btnCommentClicked = false;
+  }
+
+  showAnswerModal() {
+    this.btnShowAnswerClicked = !this.btnShowAnswerClicked;
   }
 
 
 }
-

@@ -8,7 +8,7 @@
     </ion-title>
     <ion-buttons slot="end">
       <img width="35" height="30" src="assets/icon/message.png" (click)="redirectMessagerie()">
-      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirec()">
+      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirect()">
     </ion-buttons>
 
   </ion-toolbar>
@@ -36,7 +36,7 @@
         <b>Conversation récente</b>
       </ion-list-header>
 
-      <ion-card>
+      <ion-card [routerLink]="['/private-message']">
         <ion-card-content>
           <ion-item>
             <ion-avatar slot="start">

@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Proposer de l'aide
+    </ion-title>
+    <ion-buttons slot="end">
+      <img width="35" height="30" src="assets/icon/message.png" (click)="redirectMessagerie()">
+      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirect()">
+
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <ion-button class="btn-demander-proposer" width="100px" [routerLink]="['/all-posts']" color="firstButton">
+      <img width="40" height="40" src="assets/icon/chat.png" alt="">
+      &nbsp;
+      Forum
+    </ion-button><br><br>
+    <img width="220" height="30" src="assets/icon/ou.png">
+    <br><br>
+    <ion-button class="btn-demander-proposer" [routerLink]="['/messagerie']" color="firstButton">
+      <img width="40" height="40" src="assets/icon/comments.png" alt="">
+      &nbsp;
+      Messagerie
+    </ion-button>
+
+
+  </div>
+
+
+
+</ion-content>

@@ -1,0 +1,86 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content {
+  --ion-background-color: #F6F6F2;
+
+}
+ion-header {
+  --ion-background-color: #F6F6F2;
+}
+ion-footer {
+  --ion-background-color: white;
+}
+.col{
+  border: 1px solid black;
+}
+.a {
+  display: inline-block;
+}
+
+.btn-demander-proposer{
+  width: 230px;
+  height: 50px;
+  
+}
+
+
+ion-card{
+    --ion-background-color: #E9EBFD;
+}
+
+.MessageHandler{
+  background-color: #E9EBFD;
+    width: 160px;
+  height: 30px;
+}
+
+.MessageHandler2{
+  background-color: #E9EBFD;
+    width: 160px;
+  height: 90px;
+}
+
+.MessageHandler3{
+  background-color: #E9EBFD;
+    width: 120px;
+  height: 20px;
+}
+
+.MessageHandler4{
+  background-color: #E9EBFD;
+    width: 120px;
+  height: 40px;
+}
+
+.MessageContent{
+    width: 220px;
+  height: 60px;
+  border-radius: 10px;
+}
+

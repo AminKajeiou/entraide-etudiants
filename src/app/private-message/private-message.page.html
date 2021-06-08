@@ -1,0 +1,109 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Wade Warren
+    </ion-title>
+    <ion-buttons slot="end">
+      <img width="35" height="30" src="assets/icon/message.png" (click)="redirectMessagerie()">
+      <img width="35" height="30" src="assets/icon/notification.png" (click)="redirect()">
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-label>26 Mai 2021</ion-label>
+    <ion-grid>
+      <ion-row>
+        <ion-card>
+          <ion-card-content>
+            <div class="MessageHandler">
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-card>
+              <ion-card-content>
+                <div class="MessageHandler2">
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-card>
+              <ion-card-content>
+                <div class="MessageHandler3">
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-card>
+              <ion-card-content>
+                <div class="MessageHandler4">
+                </div>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="7">
+          <div class="MessageContent">
+            <ion-textarea rows="2" cols="10" placeholder="Tapez votre message ..."></ion-textarea>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div></div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <img width="40" height="40" src="assets/icon/send.png" (click)="redirectMessagerie()">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
